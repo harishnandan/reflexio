@@ -18,7 +18,7 @@ var menu_click = new Audio();                     // why loading ??
 menu_click.onload = function() {          
 	loading++;
 }
-menu_click.src = "sounds/sound1.wav";
+menu_click.src = "sounds/click.wav";
 
 var mainShip = new Image();
 mainShip.onload = function() {
