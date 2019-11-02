@@ -1129,6 +1129,120 @@ function initialiseLevel()
 		CircMirrorCount = CircMirrors.length;
 		init = true;
 	}
+	else if(levelNumber == 13)
+	{
+		mirrors = [];
+		mirrorDrag = [];
+		CircMirrors = []; 
+	        CircMirrorDrag = [];
+		a = [];
+		a1 =[];
+		ss =[];
+		minutes = 0;
+		seconds = 0;
+		runtime = 0;
+		enemyDestroyed = false;
+		ex = 600*(width/1220);       
+		ey = 450*(width/1220);
+		eh = 100; 
+
+		mySpacestation = {
+        	x: 700*(width/1220),
+        	y: 300*(width/1220),
+        	fh: 100
+        };
+        ss.push(mySpacestation);                  
+		myMirror = {
+			x: 80*(width/1220),
+			width: 1*(width/1220),
+			y: 480*(width/1220),
+			height: 80*(width/1220),
+			drag: 1
+		};
+		mirrors.push(myMirror);
+		mirrorDrag.push(false);
+		myMirror = {
+			x: 720*(width/1220),
+			width: 50*(width/1220),
+			y: 455*(width/1220),
+			height: 70*(width/1220),
+			drag: 0
+		};
+		mirrors.push(myMirror);
+		mirrorDrag.push(false);
+		myMirror = {
+			x: 650*(width/1220),
+			width: 0*(width/1220),
+			y: 390*(width/1220),
+			height: 120*(width/1220),
+			drag: 1
+		};
+		mirrors.push(myMirror);
+		mirrorDrag.push(false);
+		myMirror = {
+			x: 90*(width/1220), 
+			width: 140*(width/1220),
+			y: 40*(width/1220),
+			height: 20*(width/1220),
+			drag: 1
+		};
+		mirrors.push(myMirror);
+		mirrorDrag.push(false);
+        myMirror = {
+			x: 125*(width/1220), 
+			width: -10*(width/1220),
+			y: 260*(width/1220),
+			height: -60*(width/1220),
+			drag: 0
+		};
+		mirrors.push(myMirror);
+		mirrorDrag.push(false);
+
+		myMovingAsteroid = {
+			x1: 400*(width/1220),
+			y1: 210*(width/1220),
+		};
+		a1.push(myMovingAsteroid);
+
+		myAsteroid = {
+			x: 470*(width/1220),
+			y: 190*(width/1220)
+		};
+		a.push(myAsteroid);
+		myAsteroid = {
+			x: 540*(width/1220),
+			y: 205*(width/1220)
+		};
+		a.push(myAsteroid);
+		myAsteroid = {
+			x: 600*(width/1220),
+			y: 235*(width/1220)
+		};
+		a.push(myAsteroid);
+		myAsteroid = {
+			x: 585*(width/1220),
+			y: 470*(width/1220)
+		};
+		a.push(myAsteroid);
+		myAsteroid = {
+			x: 495*(width/1220),
+			y: 390*(width/1220)
+		};
+		a.push(myAsteroid);
+		myAsteroid = {
+			x: 430*(width/1220),
+			y: 365*(width/1220)
+		};
+		a.push(myAsteroid);
+		myAsteroid = {
+			x: 400*(width/1220),
+			y: 290*(width/1220)
+		};
+		a.push(myAsteroid);
+		mirrorCount = mirrors.length;
+		CircMirrorCount = CircMirrors.length;
+		init = true;
+	}
 	else
 	{
 		mirrors = [];
